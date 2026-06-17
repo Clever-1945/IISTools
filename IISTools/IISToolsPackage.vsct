@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+
+	<Commands package="guidIISToolsPackage">
+		<Groups>
+			<Group guid="guidIISToolsPackageCmdSet" id="MyToolbarAnchorGroup" priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_STANDARD" />
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="guidIISToolsPackageCmdSet" id="ShowIisActionsCommandId" priority="0x0101" type="Button">
+				<Parent guid="guidIISToolsPackageCmdSet" id="MyToolbarAnchorGroup" />
+				<Icon guid="guidImages" id="iconInternet" />
+
+				<CommandFlag>IconAndText</CommandFlag>
+				<Strings>
+					<ButtonText>Инструменты IIS</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+
+		<Bitmaps>
+			<Bitmap guid="guidImages" href="Resources\internet.png" usedList="iconInternet"/>
+		</Bitmaps>
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="guidIISToolsPackage" value="{c77f3e38-92bd-4e65-8192-8a9ea469493c}" />
+
+		<GuidSymbol name="guidIISToolsPackageCmdSet" value="{128b6ee9-e7f7-45bd-89ea-76d1d86dba29}">
+			<IDSymbol name="MyMenuGroup" value="0x1020" />
+			<IDSymbol name="ShowIisActionsCommandId" value="0x0101" />
+
+			<IDSymbol name="MyToolbarDropDownMenuId" value="0x1030" />
+			<IDSymbol name="MyToolbarAnchorGroup" value="0x1040" />
+		</GuidSymbol>
+
+		<GuidSymbol name="guidImages" value="{704a5d3a-2eaf-4a2f-b21f-1d423575d0bb}">
+			<IDSymbol name="iconInternet" value="1" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
