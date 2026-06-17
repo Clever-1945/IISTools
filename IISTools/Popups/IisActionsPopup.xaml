@@ -13,7 +13,7 @@
     <Grid Background="Transparent">
         <Border 
             Margin="0 0 20 20" 
-            Background="#323232"
+            Background="{DynamicResource {x:Static vs:VsBrushes.CommandBarMouseOverBackgroundMiddle2Key}}"
             CornerRadius="5">
             <Border.Effect>
                 <DropShadowEffect 

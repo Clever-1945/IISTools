@@ -7,7 +7,7 @@
     xmlns:vsshell="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.15.0"
     xmlns:local="clr-namespace:IISTools.Dialogs"
     mc:Ignorable="d"
-    Background="#323232"
+    Background="{DynamicResource {x:Static vsshell:VsBrushes.CommandBarMouseOverBackgroundMiddle2Key}}"
     Foreground="{DynamicResource {x:Static vsshell:VsBrushes.WindowTextKey}}"
     WindowStyle="ToolWindow" 
     WindowStartupLocation="Manual"
@@ -70,7 +70,7 @@
             Name="_dataGridPings" 
             AutoGenerateColumns="False" 
             CanUserAddRows="False"
-            Background="#1E1E1E" 
+            Background="{DynamicResource {x:Static vsshell:VsBrushes.DockTargetButtonBackgroundBeginKey}}" 
             SelectionMode="Single"
             SelectionChanged="OnSelectedPing">
             <DataGrid.Resources>

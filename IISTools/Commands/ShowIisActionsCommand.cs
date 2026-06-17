@@ -44,7 +44,6 @@ namespace IISTools.Commands
             var offset = GetPopupOffset(buttonUnderMouse);
 
             _activePopup = new System.Windows.Controls.Primitives.Popup();
-            var converter = new BrushConverter();
 
             // 2. Помещаем внутрь ЛЮБОЙ ваш кастомный WPF-контрол
             var control = new IisActionsPopup();
